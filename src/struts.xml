@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+
+<!DOCTYPE struts PUBLIC
+"-//Apache Software Foundation//DTD Struts Configuration 2.5//EN"
+"http://struts.apache.org/dtds/struts-2.5.dtd">
+
+<struts>
+	<!-- 声明常量 (开发模式) -->
+	<constant name="struts.devMode" value="true"></constant>
+	<!-- 声明包 -->
+	<package name="struts2" extends="struts-default" namespace="/">
+		<!-- 定义action -->
+		<action name="login" class="action.test">
+			<!-- 定义处理成功之后的映射界面 -->
+			<result name="error">/error.jsp</result>
+			<result name="success">/success.jsp</result>
+		</action>
+	</package>
+</struts>
